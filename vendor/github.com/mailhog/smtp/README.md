@@ -19,7 +19,7 @@ reply = proto.ProcessCommand("EHLO localhost")
 // ...
 ```
 
-See [MailHog-Server](https://github.com/mailhog/MailHog-Server) and [MailHog-MTA](https://github.com/mailhog/MailHog-MTA) for example implementations.
+See [MailHog-Server](https://github.com/teck-kian/MailHog-Server) and [MailHog-MTA](https://github.com/mailhog/MailHog-MTA) for example implementations.
 
 ### Commands and replies
 
