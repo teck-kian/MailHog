@@ -1,4 +1,4 @@
-VERSION=1.0.3
+VERSION=1.0.8
 
 all: fmt combined
 
@@ -25,11 +25,11 @@ pull:
 
 tag:
 	git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
-	cd ../data; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
-	cd ../http; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
+	# cd ../data; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
+	# cd ../http; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
 	cd ../MailHog-Server; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
-	cd ../MailHog-UI; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
-	cd ../smtp; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
-	cd ../storage; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
+	# cd ../MailHog-UI; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
+	# cd ../smtp; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
+	# cd ../storage; git tag -a -m 'v${VERSION}' v${VERSION} && git push origin v${VERSION}
 
 .PHONY: all combined release fmt release-deps pull tag
